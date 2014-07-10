@@ -1,0 +1,6 @@
+CREATE TABLE TestData (
+	`id`    INT(10) NOT NULL AUTO_INCREMENT,
+	`key`	VARCHAR(255),
+	`value`	VARCHAR(255),
+	PRIMARY KEY(id)
+);

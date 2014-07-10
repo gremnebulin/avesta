@@ -16,7 +16,7 @@
 <?= sanitise_out($row['value']) ?>
 </p>
 
-<p><a href="<?= $_base_url . 'index.php/fetch/list/TestData' ?>">Return Thanks</a></p>
+<p><a href="<?= $_base_url . 'index.php/read/list/TestData' ?>">Return Thanks</a></p>
 
 <p>
 <form action="<?= $_base_url . 'index.php/update/detail/TestData' . $row['id'] ?>" method="POST">

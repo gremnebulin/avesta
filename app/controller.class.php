@@ -20,15 +20,15 @@ class Controller extends ControllerBase
 		$view = new View($view, $data);
 	}
 
-	public function fetch($view=null, $table='', $id=null)
+	public function read($view=null, $table='', $id=null)
 	{
-		debug_message("controller->fetch($view,$table,$id)");
+		debug_message("controller->read($view,$table,$id)");
 		if (!$id) { 
-			$item_list = $this->model->fetch_list($table);
+			$item_list = $this->model->read_list($table);
 			$data['item_list'] = $item_list;
 			$view = new View($view, $data);
 		} else {
-			$row = $this->model->fetch_detail($table, $id);
+			$row = $this->model->read_detail($table, $id);
 			$data['row'] = $row;
 			$view = new View($view, $data);
 		}

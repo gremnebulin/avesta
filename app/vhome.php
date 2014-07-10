@@ -14,7 +14,7 @@
 
 
 
-<p><a href="<?= $_base_url . 'index.php/fetch/list/TestData' ?>">View Data</a></p>
+<p><a href="<?= $_base_url . 'index.php/read/list/TestData' ?>">View Data</a></p>
 <p><a href="<?= $_base_url . 'index.php/restart' ?>">Clear session and start again.</a></p>
 
 </body>

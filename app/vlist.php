@@ -15,7 +15,7 @@
 
 <?php
 foreach($item_list as $row): ?>
-	<li><?= sanitise_out($row['key']) ?>: <a href="<?= $_base_url?>index.php/fetch/detail/TestData/<?= sanitise_out($row['id']) ?>">More Info</a>
+	<li><?= sanitise_out($row['key']) ?>: <a href="<?= $_base_url?>index.php/read/detail/TestData/<?= sanitise_out($row['id']) ?>">More Info</a>
         </li>
 <?php endforeach; ?>
 

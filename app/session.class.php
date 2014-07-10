@@ -10,7 +10,7 @@ class Session extends SessionBase
 	public function  add_viewed($id)
 	{
 		#Add $id to comma separated list stored in session
-		$viewed = $this->fetch_viewed();
+		$viewed = $this->read_viewed();
 		if (!in_array($id, $viewed)) {
 			$viewed []= $id;
 			$_SESSION['viewedlist'] = implode(',', $viewed);
@@ -26,7 +26,7 @@ class Session extends SessionBase
 		$_SESSION['viewedlist'] = $viewed;
 	}
 
-	public function fetch_viewed()
+	public function read_viewed()
 	{
 		$viewed_list = explode(',', @$_SESSION['viewedlist']);
 		$viewed_list = array_filter($viewed_list);//remove blanks
